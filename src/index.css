@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
+
+:root {
+  --bg-color: #080808;
+  --text-main: #f0f0f0;
+  --text-dim: #666;
+  --accent: #fff;
+  --border: #333;
+  --font-main: 'Oswald', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  cursor: default;
+  /* We will add custom cursor later if possible, but keep default for usability first */
+}
+
+/* Layout Container */
+#root {
+  max-width: 100%;
+  padding: 0;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+a,
+p {
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-title {
+  font-size: clamp(4rem, 15vw, 15rem);
+  font-weight: 700;
+  line-height: 0.85;
+  margin-left: -0.05em;
+  /* Optical alignment */
+  color: var(--text-main);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--text-dim);
+  margin-top: 2rem;
+  max-width: 600px;
+  text-transform: none;
+  /* Keep natural case for readable sentences if needed, or uppercase for style */
+  font-family: monospace;
+  /* Contrast font */
+  letter-spacing: 0;
+}
+
+/* Projects List */
+.projects-section {
+  padding: 4rem 0;
+}
+
+.section-label {
+  font-size: 1rem;
+  color: var(--text-dim);
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.project-item:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.project-item:hover {
+  background-color: #111;
+  padding-left: 2rem;
+  /* Slide effect */
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-name {
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--text-dim);
+  transition: color 0.3s;
+}
+
+.project-item:hover .project-name {
+  color: var(--accent);
+}
+
+.project-desc {
+  font-family: monospace;
+  color: var(--text-dim);
+  font-size: 1rem;
+  max-width: 500px;
+  margin-top: 0.5rem;
+  text-transform: none;
+}
+
+.project-meta {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-status {
+  font-family: monospace;
+  font-size: 0.9rem;
+  padding: 0.2rem 0.5rem;
+  border: 1px solid var(--border);
+  display: inline-block;
+}
+
+.project-tags {
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+
+/* Footer */
+footer {
+  padding: 4rem 0;
+  text-align: center;
+  font-family: monospace;
+  color: var(--text-dim);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .project-name {
+    font-size: 2rem;
+  }
+
+  .project-item {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .project-meta {
+    text-align: left;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}

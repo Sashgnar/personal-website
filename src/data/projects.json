@@ -1,0 +1,143 @@
+[
+  {
+    "id": 1087235562,
+    "name": "PROD_TRADER",
+    "description": "PulseEdge Engine. Quantitative trading system executing 5ms latency strategies. Real-time implementation of 'Insider Sniper' logic.",
+    "html_url": null,
+    "isPrivate": true,
+    "status": "LIVE",
+    "language": "PY",
+    "tags": [
+      "ALGO-TRADING",
+      "QUANT"
+    ],
+    "category": "Personal"
+  },
+  {
+    "id": 1114466455,
+    "name": "WILLIAM_WALKS",
+    "description": "Vertical SaaS for pet care. GPS tracking, automated client reporting, and admin dashboard. Production-ready business suite.",
+    "html_url": null,
+    "isPrivate": true,
+    "status": "PROD",
+    "language": "TS",
+    "tags": [
+      "SAAS",
+      "NEXT.JS"
+    ],
+    "category": "Personal"
+  },
+  {
+    "id": 1123110771,
+    "name": "MAKEUP//DUPE",
+    "description": "Beauty data pipeline. High-concurrency scraper & similarity engine reverse-engineering cosmetic formulations.",
+    "html_url": null,
+    "isPrivate": true,
+    "status": "DEV",
+    "language": "JS",
+    "tags": [
+      "DATA-MINING",
+      "SUPABASE"
+    ],
+    "category": "Personal"
+  },
+  {
+    "id": 2003,
+    "name": "MOBILE_ASSISTANT",
+    "description": "Cross-platform productivity. React Native app with AI scheduling assistant integrated into OS-level Calendar APIs.",
+    "html_url": null,
+    "isPrivate": true,
+    "status": "DEV",
+    "language": "TS",
+    "tags": [
+      "REACT-NATIVE",
+      "AI"
+    ],
+    "category": "Personal"
+  },
+  {
+    "id": 1076031950,
+    "name": "MANGA_OCR",
+    "description": "Computer vision pipeline. Automated text detection and in-painting for real-time translation of raw image data.",
+    "html_url": null,
+    "isPrivate": true,
+    "status": "PROTO",
+    "language": "TS",
+    "tags": [
+      "CV",
+      "LLM"
+    ],
+    "category": "Personal"
+  },
+  {
+    "id": 2004,
+    "name": "DB_SYSTEMS",
+    "description": "In-memory B+-tree implementation in C++. Engineered relational schemas, custom concurrency control, and RAID storage simulation.",
+    "html_url": null,
+    "isPrivate": true,
+    "status": "CMPT 454",
+    "language": "C++",
+    "tags": [
+      "SYSTEMS",
+      "DB-ENGINEERING"
+    ],
+    "category": "Academic"
+  },
+  {
+    "id": 2001,
+    "name": "UNIX_SHELL",
+    "description": "Linux Kernel interaction. Custom C shell handling process creation, piping, redirection, and background job control.",
+    "html_url": null,
+    "isPrivate": true,
+    "status": "CMPT 300",
+    "language": "C",
+    "tags": [
+      "OS",
+      "LINUX",
+      "C"
+    ],
+    "category": "Academic"
+  },
+  {
+    "id": 2002,
+    "name": "2048_SOLVER",
+    "description": "Adversarial AI. Minimax with alpha-beta pruning exceeding 90% win rate. Custom heuristics for board evaluation.",
+    "html_url": null,
+    "isPrivate": true,
+    "status": "CMPT 405",
+    "language": "PY",
+    "tags": [
+      "AI",
+      "ALGORITHMS"
+    ],
+    "category": "Academic"
+  },
+  {
+    "id": 2005,
+    "name": "PARENT_APP",
+    "description": "Agile/Scrum Android development. Built breathing guidance modules with UML state modeling. Zero-crash sprint record.",
+    "html_url": null,
+    "isPrivate": true,
+    "status": "CMPT 276",
+    "language": "JAVA",
+    "tags": [
+      "ANDROID",
+      "AGILE"
+    ],
+    "category": "Academic"
+  },
+  {
+    "id": 2006,
+    "name": "ALGO_BENCHMARK",
+    "description": "Performance analysis. Comparative benchmarking of Quicksort, Introsort, and Prim’s against optimal BSTs on massive datasets.",
+    "html_url": null,
+    "isPrivate": true,
+    "status": "CMPT 307",
+    "language": "PY",
+    "tags": [
+      "ALGORITHMS",
+      "ANALYSIS"
+    ],
+    "category": "Academic"
+  }
+]
