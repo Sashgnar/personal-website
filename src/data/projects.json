@@ -2,8 +2,8 @@
   {
     "id": 1087235562,
     "name": "PROD_TRADER",
-    "description": "PulseEdge Engine. Quantitative trading system executing 5ms latency strategies. Real-time implementation of 'Insider Sniper' logic.",
-    "html_url": null,
+    "description": "PulseEdge Engine. A high-frequency quantitative trading system executing strategies with 5ms latency. Features a real-time 'Insider Sniper' algorithm that monitors market anomalies. Built with Python and heavily optimized for execution speed.",
+    "html_url": "https://github.com/Sashgnar/PulseEdge",
     "isPrivate": true,
     "status": "LIVE",
     "language": "PY",
@@ -11,13 +11,14 @@
       "ALGO-TRADING",
       "QUANT"
     ],
-    "category": "Personal"
+    "category": "Personal",
+    "image": "/images/pulse_edge.png"
   },
   {
     "id": 1114466455,
     "name": "WILLIAM_WALKS",
-    "description": "Vertical SaaS for pet care. GPS tracking, automated client reporting, and admin dashboard. Production-ready business suite.",
-    "html_url": null,
+    "description": "Vertical SaaS for the pet care industry. A production-ready business suite featuring real-time GPS tracking, automated client report cards, and a comprehensive admin dashboard. built with Next.js and Supabase.",
+    "html_url": "https://github.com/Sashgnar/WilliamDogWalk",
     "isPrivate": true,
     "status": "PROD",
     "language": "TS",
@@ -25,13 +26,14 @@
       "SAAS",
       "NEXT.JS"
     ],
-    "category": "Personal"
+    "category": "Personal",
+    "image": "/images/william_walks.png"
   },
   {
     "id": 1123110771,
     "name": "MAKEUP//DUPE",
-    "description": "Beauty data pipeline. High-concurrency scraper & similarity engine reverse-engineering cosmetic formulations.",
-    "html_url": null,
+    "description": "A high-concurrency data pipeline and similarity engine that reverse-engineers cosmetic formulations. Scrapes and normalizes data from major retailers to identify affordable alternatives (dupes) with 90% ingredient matches.",
+    "html_url": "https://github.com/Sashgnar/MakeupDupe",
     "isPrivate": true,
     "status": "DEV",
     "language": "JS",
@@ -44,8 +46,8 @@
   {
     "id": 2003,
     "name": "MOBILE_ASSISTANT",
-    "description": "Cross-platform productivity. React Native app with AI scheduling assistant integrated into OS-level Calendar APIs.",
-    "html_url": null,
+    "description": "Cross-platform productivity assistant built with React Native. Integrates with OS-level Calendar and Reminders APIs to provide AI-driven scheduling suggestions. Features focus timers and distraction blocking.",
+    "html_url": "https://github.com/Sashgnar/scheduler-assistant",
     "isPrivate": true,
     "status": "DEV",
     "language": "TS",
@@ -58,8 +60,8 @@
   {
     "id": 1076031950,
     "name": "MANGA_OCR",
-    "description": "Computer vision pipeline. Automated text detection and in-painting for real-time translation of raw image data.",
-    "html_url": null,
+    "description": "Real-time computer vision pipeline for translating raw manga pages. Utilizes OCR to detect text bubbles, LLMs for context-aware translation, and image in-painting to seamlessly replace text while preserving art.",
+    "html_url": "https://github.com/Sashgnar/MangaTranslator",
     "isPrivate": true,
     "status": "PROTO",
     "language": "TS",
@@ -70,9 +72,23 @@
     "category": "Personal"
   },
   {
+    "id": 1042654820,
+    "name": "AI_DISPATCHER",
+    "description": "Automated dispatching system for towing fleets. optimizing route efficiency and response times using AI-driven logistics algorithms.",
+    "html_url": "https://github.com/Sashgnar/ai-towing-dispatcher",
+    "isPrivate": true,
+    "status": "DEV",
+    "language": "JS",
+    "tags": [
+      "LOGISTICS",
+      "AI"
+    ],
+    "category": "Personal"
+  },
+  {
     "id": 2004,
     "name": "DB_SYSTEMS",
-    "description": "In-memory B+-tree implementation in C++. Engineered relational schemas, custom concurrency control, and RAID storage simulation.",
+    "description": "In-memory B+-tree implementation in C++. Engineered relational schemas, custom concurrency control, and simulated RAID storage systems. Focused on optimizing I/O performance and buffer management.",
     "html_url": null,
     "isPrivate": true,
     "status": "CMPT 454",
@@ -86,7 +102,7 @@
   {
     "id": 2001,
     "name": "UNIX_SHELL",
-    "description": "Linux Kernel interaction. Custom C shell handling process creation, piping, redirection, and background job control.",
+    "description": "Custom Linux kernel interaction shell written in C. Implements low-level process creation, piping, I/O redirection, and background job control using system calls.",
     "html_url": null,
     "isPrivate": true,
     "status": "CMPT 300",
@@ -101,7 +117,7 @@
   {
     "id": 2002,
     "name": "2048_SOLVER",
-    "description": "Adversarial AI. Minimax with alpha-beta pruning exceeding 90% win rate. Custom heuristics for board evaluation.",
+    "description": "Adversarial AI agent playing 2048. Implements Minimax with alpha-beta pruning and Expectimax optimization. Features custom board evaluation heuristics achieving >90% win rates.",
     "html_url": null,
     "isPrivate": true,
     "status": "CMPT 405",
@@ -115,7 +131,7 @@
   {
     "id": 2005,
     "name": "PARENT_APP",
-    "description": "Agile/Scrum Android development. Built breathing guidance modules with UML state modeling. Zero-crash sprint record.",
+    "description": "Agile/Scrum Android development project. Built a child-management app featuring breathing guidance modules modeled with UML state diagrams. Achieved a zero-crash record across three sprints.",
     "html_url": null,
     "isPrivate": true,
     "status": "CMPT 276",
@@ -129,7 +145,7 @@
   {
     "id": 2006,
     "name": "ALGO_BENCHMARK",
-    "description": "Performance analysis. Comparative benchmarking of Quicksort, Introsort, and Prim’s against optimal BSTs on massive datasets.",
+    "description": "Rigorous algorithmic performance analysis. Comparatively benchmarked Quicksort, Introsort, and Prim’s algorithm against optimal BSTs using massive datasets to verify time complexity models.",
     "html_url": null,
     "isPrivate": true,
     "status": "CMPT 307",

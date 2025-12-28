@@ -21,6 +21,14 @@ export default function ProjectEntry({ project }) {
                     {project.tags.join(' / ')}
                 </div>
             </div>
+
+            {project.image && (
+                <img
+                    src={project.image}
+                    alt={project.name}
+                    className="project-image-preview"
+                />
+            )}
         </Wrapper>
     );
 }
