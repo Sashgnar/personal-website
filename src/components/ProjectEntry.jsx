@@ -1,15 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function ProjectEntry({ project }) {
-    const Wrapper = project.html_url ? 'a' : 'div';
+    // Only link to detail page if project has details
+    const hasDetails = project.details;
+    const slug = project.slug || project.name.toLowerCase().replace(/[^a-z0-9]/g, '');
 
-    return (
-        <Wrapper
-            href={project.html_url}
-            target={project.html_url ? "_blank" : undefined}
-            rel={project.html_url ? "noopener noreferrer" : undefined}
-            className="project-item"
-        >
+    const content = (
+        <>
             <div className="project-info">
                 <h3 className="project-name">{project.name}</h3>
                 <p className="project-desc">{project.description}</p>
@@ -21,6 +19,20 @@ export default function ProjectEntry({ project }) {
                     {project.tags.join(' / ')}
                 </div>
             </div>
-        </Wrapper>
+        </>
+    );
+
+    if (hasDetails) {
+        return (
+            <Link to={`/project/${slug}`} className="project-item">
+                {content}
+            </Link>
+        );
+    }
+
+    return (
+        <div className="project-item">
+            {content}
+        </div>
     );
 }

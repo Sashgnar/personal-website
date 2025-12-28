@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
+import { Routes, Route, Link } from 'react-router-dom'
 import Hero from './components/Hero'
 import ProjectEntry from './components/ProjectEntry'
 import Experience from './components/Experience'
+import ProjectDetail from './components/ProjectDetail'
 import projectsData from './data/projects.json'
 
-function App() {
+function HomePage() {
   const [personalProjects, setPersonalProjects] = useState([])
   const [academicProjects, setAcademicProjects] = useState([])
 
@@ -16,7 +18,7 @@ function App() {
   return (
     <div className="container">
       <nav>
-        <span className="logo">SASHGNAR/DEV</span>
+        <Link to="/" className="logo">SASHGNAR/DEV</Link>
         <a href="mailto:sashstolba@gmail.com">SASHSTOLBA@GMAIL.COM</a>
       </nav>
 
@@ -48,6 +50,15 @@ function App() {
         <p>SASH STOLBA © 2025</p>
       </footer>
     </div>
+  )
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/project/:slug" element={<ProjectDetail />} />
+    </Routes>
   )
 }
 

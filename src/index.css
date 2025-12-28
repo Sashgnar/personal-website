@@ -170,6 +170,148 @@ nav {
   color: var(--text-dim);
 }
 
+/* Project Detail Page */
+.detail-header {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.back-link {
+  font-family: monospace;
+  font-size: 1rem;
+  color: var(--text-dim);
+  transition: color 0.3s;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+.project-detail {
+  padding: 4rem 0;
+}
+
+.detail-hero {
+  margin-bottom: 4rem;
+}
+
+.detail-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.detail-lang {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+
+.detail-title {
+  font-size: clamp(3rem, 10vw, 8rem);
+  font-weight: 700;
+  line-height: 0.9;
+  margin-bottom: 2rem;
+}
+
+.detail-tagline {
+  font-family: monospace;
+  font-size: 1.2rem;
+  color: var(--text-dim);
+  max-width: 600px;
+  text-transform: none;
+  line-height: 1.5;
+}
+
+.detail-content {
+  max-width: 800px;
+}
+
+.detail-content h2 {
+  font-size: 1.5rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.detail-content p {
+  font-family: monospace;
+  font-size: 1rem;
+  color: var(--text-dim);
+  text-transform: none;
+  line-height: 1.8;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+}
+
+.feature-list li {
+  font-family: monospace;
+  font-size: 1rem;
+  color: var(--text-dim);
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border);
+  text-transform: none;
+}
+
+.feature-list li::before {
+  content: "→ ";
+  color: var(--accent);
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  font-family: monospace;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.8rem;
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+}
+
+.detail-gallery {
+  margin-top: 3rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  filter: grayscale(50%);
+  transition: filter 0.3s;
+}
+
+.gallery-grid img:hover {
+  filter: grayscale(0%);
+}
+
+.detail-tags {
+  display: flex;
+  gap: 1rem;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.tag {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+
 /* Footer */
 footer {
   padding: 4rem 0;

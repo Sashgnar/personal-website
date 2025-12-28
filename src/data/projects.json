@@ -1,53 +1,144 @@
 [
   {
-    "id": 1087235562,
-    "name": "PROD_TRADER",
-    "description": "PulseEdge Engine. A high-frequency quantitative trading system executing strategies with 5ms latency. Features a real-time 'Insider Sniper' algorithm that monitors market anomalies. Built with Python and heavily optimized for execution speed.",
-    "html_url": "https://github.com/Sashgnar/PulseEdge",
-    "isPrivate": true,
-    "status": "LIVE",
-    "language": "PY",
-    "tags": [
-      "ALGO-TRADING",
-      "QUANT"
-    ],
-    "category": "Personal",
-    "image": "/images/pulse_edge.png"
-  },
-  {
     "id": 1114466455,
     "name": "WILLIAM_WALKS",
-    "description": "Vertical SaaS for the pet care industry. A production-ready business suite featuring real-time GPS tracking, automated client report cards, and a comprehensive admin dashboard. built with Next.js and Supabase.",
-    "html_url": "https://github.com/Sashgnar/WilliamDogWalk",
+    "slug": "williamwalks",
+    "description": "Vertical SaaS for the pet care industry. Production-ready business suite with real-time GPS tracking and automated client reporting.",
     "isPrivate": true,
     "status": "PROD",
     "language": "TS",
     "tags": [
       "SAAS",
-      "NEXT.JS"
+      "NEXT.JS",
+      "SUPABASE"
     ],
     "category": "Personal",
-    "image": "/images/william_walks.png"
+    "details": {
+      "overview": "A complete business management platform built for a professional dog walking service. Features real-time GPS tracking during walks, automated report cards sent to clients after each session, and a comprehensive admin dashboard for scheduling and client management.",
+      "features": [
+        "Real-time GPS tracking with live map updates during walks",
+        "Automated post-walk report cards with photos and notes",
+        "Client booking system with availability calendar",
+        "Admin dashboard for managing schedules and clients",
+        "Stripe payment integration for seamless billing"
+      ],
+      "tech": [
+        "Next.js 14",
+        "TypeScript",
+        "Supabase",
+        "Leaflet Maps",
+        "Stripe",
+        "Vercel"
+      ],
+      "images": []
+    }
   },
   {
     "id": 1123110771,
     "name": "MAKEUP//DUPE",
-    "description": "A high-concurrency data pipeline and similarity engine that reverse-engineers cosmetic formulations. Scrapes and normalizes data from major retailers to identify affordable alternatives (dupes) with 90% ingredient matches.",
-    "html_url": "https://github.com/Sashgnar/MakeupDupe",
+    "slug": "makeupdupe",
+    "description": "High-concurrency data pipeline and similarity engine that reverse-engineers cosmetic formulations to find affordable alternatives.",
     "isPrivate": true,
     "status": "DEV",
     "language": "JS",
     "tags": [
       "DATA-MINING",
+      "REACT-NATIVE",
       "SUPABASE"
     ],
-    "category": "Personal"
+    "category": "Personal",
+    "details": {
+      "overview": "A mobile app that helps users find affordable alternatives (dupes) to expensive makeup products. The backend scrapes and normalizes product data from major retailers, then uses a similarity engine to match products with 90%+ ingredient overlap.",
+      "features": [
+        "Barcode scanning for instant product lookup",
+        "Ingredient similarity matching with 90%+ accuracy",
+        "Price comparison across major retailers",
+        "User reviews and community-sourced dupes",
+        "Favorites and shopping list functionality"
+      ],
+      "tech": [
+        "React Native",
+        "Expo",
+        "TypeScript",
+        "Supabase",
+        "Cheerio",
+        "Node.js"
+      ],
+      "images": []
+    }
+  },
+  {
+    "id": 1087235562,
+    "name": "PROD_TRADER",
+    "slug": "prodtrader",
+    "description": "High-frequency quantitative trading system executing strategies with 5ms latency. Real-time 'Insider Sniper' algorithm monitoring market anomalies.",
+    "isPrivate": true,
+    "status": "LIVE",
+    "language": "PY",
+    "tags": [
+      "ALGO-TRADING",
+      "QUANT",
+      "PYTHON"
+    ],
+    "category": "Personal",
+    "details": {
+      "overview": "PulseEdge is a quantitative trading engine designed for speed and precision. It implements multiple trading strategies including the 'Insider Sniper' which detects unusual market activity patterns that may indicate informed trading, and executes positions with sub-10ms latency.",
+      "features": [
+        "Sub-10ms trade execution latency",
+        "Multiple strategy lanes: Insider Sniper, Earnings Momentum, 3-Day Dip",
+        "Real-time market data processing and analysis",
+        "Risk management with automatic position sizing",
+        "Performance dashboard with P&L tracking"
+      ],
+      "tech": [
+        "Python",
+        "Alpaca API",
+        "Pandas",
+        "NumPy",
+        "Oracle Cloud",
+        "FastAPI"
+      ],
+      "images": []
+    }
+  },
+  {
+    "id": 1076031950,
+    "name": "MANGA_OCR",
+    "slug": "mangaocr",
+    "description": "Real-time computer vision pipeline for translating raw manga pages using OCR and LLM-powered context-aware translation.",
+    "isPrivate": true,
+    "status": "PROTO",
+    "language": "TS",
+    "tags": [
+      "CV",
+      "LLM",
+      "TYPESCRIPT"
+    ],
+    "category": "Personal",
+    "details": {
+      "overview": "An automated translation pipeline that takes raw manga pages and produces translated versions while preserving the original artwork. Uses OCR to detect and extract text from speech bubbles, LLMs for context-aware translation, and image in-painting to seamlessly replace text.",
+      "features": [
+        "Automatic text bubble detection using computer vision",
+        "OCR text extraction optimized for Japanese characters",
+        "Context-aware translation using GPT-4",
+        "Image in-painting to replace text naturally",
+        "Batch processing for entire chapters"
+      ],
+      "tech": [
+        "TypeScript",
+        "OpenCV",
+        "Tesseract OCR",
+        "OpenAI API",
+        "Canvas API"
+      ],
+      "images": []
+    }
   },
   {
     "id": 2003,
     "name": "MOBILE_ASSISTANT",
-    "description": "Cross-platform productivity assistant built with React Native. Integrates with OS-level Calendar and Reminders APIs to provide AI-driven scheduling suggestions. Features focus timers and distraction blocking.",
-    "html_url": "https://github.com/Sashgnar/scheduler-assistant",
+    "slug": "mobileassistant",
+    "description": "Cross-platform productivity assistant with AI-driven scheduling and focus tools.",
     "isPrivate": true,
     "status": "DEV",
     "language": "TS",
@@ -58,24 +149,10 @@
     "category": "Personal"
   },
   {
-    "id": 1076031950,
-    "name": "MANGA_OCR",
-    "description": "Real-time computer vision pipeline for translating raw manga pages. Utilizes OCR to detect text bubbles, LLMs for context-aware translation, and image in-painting to seamlessly replace text while preserving art.",
-    "html_url": "https://github.com/Sashgnar/MangaTranslator",
-    "isPrivate": true,
-    "status": "PROTO",
-    "language": "TS",
-    "tags": [
-      "CV",
-      "LLM"
-    ],
-    "category": "Personal"
-  },
-  {
     "id": 1042654820,
     "name": "AI_DISPATCHER",
-    "description": "Automated dispatching system for towing fleets. optimizing route efficiency and response times using AI-driven logistics algorithms.",
-    "html_url": "https://github.com/Sashgnar/ai-towing-dispatcher",
+    "slug": "aidispatcher",
+    "description": "Automated dispatching system for towing fleets optimizing route efficiency using AI-driven logistics.",
     "isPrivate": true,
     "status": "DEV",
     "language": "JS",
@@ -88,8 +165,8 @@
   {
     "id": 2004,
     "name": "DB_SYSTEMS",
-    "description": "In-memory B+-tree implementation in C++. Engineered relational schemas, custom concurrency control, and simulated RAID storage systems. Focused on optimizing I/O performance and buffer management.",
-    "html_url": null,
+    "slug": "dbsystems",
+    "description": "In-memory B+-tree implementation in C++. Engineered relational schemas and concurrency control.",
     "isPrivate": true,
     "status": "CMPT 454",
     "language": "C++",
@@ -102,8 +179,8 @@
   {
     "id": 2001,
     "name": "UNIX_SHELL",
-    "description": "Custom Linux kernel interaction shell written in C. Implements low-level process creation, piping, I/O redirection, and background job control using system calls.",
-    "html_url": null,
+    "slug": "unixshell",
+    "description": "Custom Linux shell in C implementing process creation, piping, I/O redirection, and job control.",
     "isPrivate": true,
     "status": "CMPT 300",
     "language": "C",
@@ -117,8 +194,8 @@
   {
     "id": 2002,
     "name": "2048_SOLVER",
-    "description": "Adversarial AI agent playing 2048. Implements Minimax with alpha-beta pruning and Expectimax optimization. Features custom board evaluation heuristics achieving >90% win rates.",
-    "html_url": null,
+    "slug": "2048solver",
+    "description": "Adversarial AI using Minimax with alpha-beta pruning achieving >90% win rates.",
     "isPrivate": true,
     "status": "CMPT 405",
     "language": "PY",
@@ -131,8 +208,8 @@
   {
     "id": 2005,
     "name": "PARENT_APP",
-    "description": "Agile/Scrum Android development project. Built a child-management app featuring breathing guidance modules modeled with UML state diagrams. Achieved a zero-crash record across three sprints.",
-    "html_url": null,
+    "slug": "parentapp",
+    "description": "Agile/Scrum Android app with breathing guidance modules and UML state modeling.",
     "isPrivate": true,
     "status": "CMPT 276",
     "language": "JAVA",
@@ -145,8 +222,8 @@
   {
     "id": 2006,
     "name": "ALGO_BENCHMARK",
-    "description": "Rigorous algorithmic performance analysis. Comparatively benchmarked Quicksort, Introsort, and Prim’s algorithm against optimal BSTs using massive datasets to verify time complexity models.",
-    "html_url": null,
+    "slug": "algobenchmark",
+    "description": "Comparative benchmarking of Quicksort, Introsort, and Prim's algorithm on massive datasets.",
     "isPrivate": true,
     "status": "CMPT 307",
     "language": "PY",
