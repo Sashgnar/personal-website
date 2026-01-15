@@ -11,8 +11,7 @@ export default function Hero() {
                         STOLBA
                     </h1>
                     <div className="hero-subtitle">
-            > ASPIRING IAM ENGINEER. FULL STACK & SECURITY.<br />
-            > BASED IN PLOVDIV, BULGARIA.
+            > ASPIRING IAM ENGINEER. FULL STACK & SECURITY.
                     </div>
                 </div>
 
