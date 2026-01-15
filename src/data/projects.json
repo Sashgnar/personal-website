@@ -9,7 +9,6 @@
     "status": "PROD",
     "language": "TS",
     "tags": [
-      "IAM",
       "NEXT.JS",
       "SUPABASE-AUTH"
     ],
