@@ -119,9 +119,13 @@ nav {
   border-bottom: 1px solid var(--border);
 }
 
-.project-item:hover {
-  background-color: #111;
+/* Only apply hover effects to actual links */
+a.project-item:hover {
+  background-color: #0c0c0c;
+  /* Very subtle darken */
   padding-left: 2rem;
+  border-color: var(--accent);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
 }
 
 .project-info {
@@ -134,10 +138,42 @@ nav {
   font-size: 4rem;
   font-weight: 500;
   color: var(--text-dim);
-  transition: color 0.3s;
+  transition: all 0.1s steps(2);
+  /* Fast, digital transition */
+  position: relative;
+  display: inline-block;
 }
 
-.project-item:hover .project-name {
+/* Terminal interaction for links only */
+a.project-item:hover .project-name {
+  color: var(--accent);
+}
+
+a.project-item:hover .project-name::before {
+  content: "> ";
+  color: var(--accent);
+  position: absolute;
+  left: -0.8em;
+  opacity: 1;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+a.project-item:hover .project-name::after {
+  content: "_";
+  display: inline-block;
+  margin-left: 5px;
+  animation: blink 1s step-end infinite;
   color: var(--accent);
 }
 

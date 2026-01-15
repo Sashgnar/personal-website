@@ -33,7 +33,7 @@ export default function Experience() {
             <span className="section-label">EXPERIENCE</span>
             <div className="project-list">
                 {experiences.map(exp => (
-                    <div key={exp.id} className="project-item" style={{ cursor: 'default' }}>
+                    <div key={exp.id} className="project-item">
                         <div className="project-info">
                             <h3 className="project-name" style={{ fontSize: '2.5rem' }}>{exp.company}</h3>
                             <ul className="feature-list" style={{ marginTop: '1rem' }}>
