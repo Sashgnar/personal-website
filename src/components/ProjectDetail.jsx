@@ -36,6 +36,16 @@ export default function ProjectDetail() {
                     </div>
                     <h1 className="detail-title">{project.name}</h1>
                     <p className="detail-tagline">{project.description}</p>
+                    {project.url && (
+                        <a
+                            href={project.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="live-site-link"
+                        >
+                            VISIT LIVE SITE →
+                        </a>
+                    )}
                 </header>
 
                 {project.details && (

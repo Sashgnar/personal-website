@@ -5,16 +5,17 @@
     "slug": "williamwalks",
     "description": "Vertical SaaS for the pet care industry. Production-ready business suite with real-time GPS tracking and automated client reporting.",
     "isPrivate": true,
+    "url": "https://williamsdogwalking.ca",
     "status": "PROD",
     "language": "TS",
     "tags": [
-      "SAAS",
+      "IAM",
       "NEXT.JS",
-      "SUPABASE"
+      "SUPABASE-AUTH"
     ],
     "category": "Personal",
     "details": {
-      "overview": "A complete business management platform built for a professional dog walking service. Features real-time GPS tracking during walks, automated report cards sent to clients after each session, and a comprehensive admin dashboard for scheduling and client management.",
+      "overview": "A complete business management platform built for a professional dog walking service. Features robust Identity and Access Management through Supabase Auth, real-time GPS tracking during walks, automated report cards sent to clients after each session, and a comprehensive admin dashboard for scheduling and client management.",
       "features": [
         "Real-time GPS tracking with live map updates during walks",
         "Automated post-walk report cards with photos and notes",
@@ -82,7 +83,7 @@
     ],
     "category": "Personal",
     "details": {
-      "overview": "PulseEdge is a quantitative trading engine designed for speed and precision. It implements multiple trading strategies including the 'Insider Sniper' which detects unusual market activity patterns that may indicate informed trading, and executes positions with sub-10ms latency.",
+      "overview": "PulseEdge is a quantitative trading engine designed for speed and precision. It implements multiple trading strategies including the 'Insider Sniper' which detects unusual market activity patterns that may indicate informed trading, and executes positions with sub-10ms latency. Managed secure API key storage and encrypted communication with brokerage endpoints.",
       "features": [
         "Sub-10ms trade execution latency",
         "Multiple strategy lanes: Insider Sniper, Earnings Momentum, 3-Day Dip",
@@ -180,7 +181,7 @@
     "id": 2001,
     "name": "UNIX_SHELL",
     "slug": "unixshell",
-    "description": "Custom Linux shell in C implementing process creation, piping, I/O redirection, and job control.",
+    "description": "Custom Linux shell in C implementing process creation, piping, I/O redirection, job control, and process permission management.",
     "isPrivate": true,
     "status": "CMPT 300",
     "language": "C",

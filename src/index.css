@@ -223,6 +223,22 @@ nav {
   line-height: 1.5;
 }
 
+.live-site-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-family: monospace;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  transition: all 0.3s ease;
+}
+
+.live-site-link:hover {
+  background-color: var(--accent);
+  color: var(--bg-color);
+}
+
 .detail-content {
   max-width: 800px;
 }

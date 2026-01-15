@@ -18,7 +18,7 @@ function HomePage() {
   return (
     <div className="container">
       <nav>
-        <Link to="/" className="logo">SASHGNAR/DEV</Link>
+        <Link to="/" className="logo">SASHGNAR/IAM</Link>
         <a href="mailto:sashstolba@gmail.com">SASHSTOLBA@GMAIL.COM</a>
       </nav>
 
