@@ -1,16 +1,18 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import projectsData from '../data/projects.json';
 
 export default function ProjectDetail() {
     const { slug } = useParams();
-    const project = projectsData.find(p => p.name.toLowerCase().replace(/[^a-z0-9]/g, '') === slug);
+    const project = projectsData.find(
+        (entry) => entry.slug === slug || entry.name.toLowerCase().replace(/[^a-z0-9]/g, '') === slug
+    );
 
     if (!project) {
         return (
             <div className="container">
                 <div className="detail-header">
-                    <Link to="/" className="back-link">← BACK</Link>
+                    <Link to="/" className="back-link">&lt;- BACK</Link>
                     <h1>PROJECT NOT FOUND</h1>
                 </div>
             </div>
@@ -25,7 +27,7 @@ export default function ProjectDetail() {
             </nav>
 
             <div className="detail-header">
-                <Link to="/" className="back-link">← BACK TO PROJECTS</Link>
+                <Link to="/" className="back-link">&lt;- BACK TO PROJECTS</Link>
             </div>
 
             <article className="project-detail">
@@ -43,7 +45,7 @@ export default function ProjectDetail() {
                             rel="noopener noreferrer"
                             className="live-site-link"
                         >
-                            VISIT LIVE SITE →
+                            VISIT LIVE SITE -&gt;
                         </a>
                     )}
                 </header>
@@ -57,8 +59,8 @@ export default function ProjectDetail() {
                             <>
                                 <h2>KEY FEATURES</h2>
                                 <ul className="feature-list">
-                                    {project.details.features.map((feature, i) => (
-                                        <li key={i}>{feature}</li>
+                                    {project.details.features.map((feature, index) => (
+                                        <li key={index}>{feature}</li>
                                     ))}
                                 </ul>
                             </>
@@ -68,8 +70,8 @@ export default function ProjectDetail() {
                             <>
                                 <h2>TECH STACK</h2>
                                 <div className="tech-tags">
-                                    {project.details.tech.map((t, i) => (
-                                        <span key={i} className="tech-tag">{t}</span>
+                                    {project.details.tech.map((technology, index) => (
+                                        <span key={index} className="tech-tag">{technology}</span>
                                     ))}
                                 </div>
                             </>
@@ -79,8 +81,8 @@ export default function ProjectDetail() {
                             <section className="detail-gallery">
                                 <h2>SCREENSHOTS</h2>
                                 <div className="gallery-grid">
-                                    {project.details.images.map((img, i) => (
-                                        <img key={i} src={img} alt={`${project.name} screenshot ${i + 1}`} />
+                                    {project.details.images.map((image, index) => (
+                                        <img key={index} src={image} alt={`${project.name} screenshot ${index + 1}`} />
                                     ))}
                                 </div>
                             </section>
@@ -89,14 +91,14 @@ export default function ProjectDetail() {
                 )}
 
                 <div className="detail-tags">
-                    {project.tags.map((tag, i) => (
-                        <span key={i} className="tag">{tag}</span>
+                    {project.tags.map((tag, index) => (
+                        <span key={index} className="tag">{tag}</span>
                     ))}
                 </div>
             </article>
 
             <footer>
-                <p>SASH STOLBA © 2025</p>
+                <p>SASH STOLBA (C) 2026</p>
             </footer>
         </div>
     );

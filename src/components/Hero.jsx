@@ -11,7 +11,7 @@ export default function Hero() {
                         STOLBA
                     </h1>
                     <div className="hero-subtitle">
-            > FULL STACK & SECURITY.
+                        {'> FULL STACK & SECURITY.'}
                     </div>
                 </div>
 

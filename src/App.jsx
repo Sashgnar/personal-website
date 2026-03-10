@@ -1,19 +1,13 @@
-import { useState, useEffect } from 'react'
-import { Routes, Route, Link } from 'react-router-dom'
-import Hero from './components/Hero'
-import ProjectEntry from './components/ProjectEntry'
-import Experience from './components/Experience'
-import ProjectDetail from './components/ProjectDetail'
-import projectsData from './data/projects.json'
+import { Link, Route, Routes } from 'react-router-dom';
+import Experience from './components/Experience';
+import Hero from './components/Hero';
+import ProjectDetail from './components/ProjectDetail';
+import ProjectEntry from './components/ProjectEntry';
+import projectsData from './data/projects.json';
 
 function HomePage() {
-  const [personalProjects, setPersonalProjects] = useState([])
-  const [academicProjects, setAcademicProjects] = useState([])
-
-  useEffect(() => {
-    setPersonalProjects(projectsData.filter(p => p.category === 'Personal'))
-    setAcademicProjects(projectsData.filter(p => p.category === 'Academic'))
-  }, [])
+  const personalProjects = projectsData.filter((project) => project.category === 'Personal');
+  const academicProjects = projectsData.filter((project) => project.category === 'Academic');
 
   return (
     <div className="container">
@@ -24,13 +18,12 @@ function HomePage() {
 
       <main>
         <Hero />
-
         <Experience />
 
         <section className="projects-section">
           <span className="section-label">SELECTED WORKS // PERSONAL</span>
           <div className="project-list">
-            {personalProjects.map(project => (
+            {personalProjects.map((project) => (
               <ProjectEntry key={project.id} project={project} />
             ))}
           </div>
@@ -39,7 +32,7 @@ function HomePage() {
         <section className="projects-section" style={{ paddingTop: '2rem' }}>
           <span className="section-label">ACADEMIC ENGINEERING</span>
           <div className="project-list">
-            {academicProjects.map(project => (
+            {academicProjects.map((project) => (
               <ProjectEntry key={project.id} project={project} />
             ))}
           </div>
@@ -47,10 +40,10 @@ function HomePage() {
       </main>
 
       <footer>
-        <p>SASH STOLBA © 2025</p>
+        <p>SASH STOLBA (C) 2026</p>
       </footer>
     </div>
-  )
+  );
 }
 
 function App() {
@@ -59,7 +52,7 @@ function App() {
       <Route path="/" element={<HomePage />} />
       <Route path="/project/:slug" element={<ProjectDetail />} />
     </Routes>
-  )
+  );
 }
 
-export default App
+export default App;

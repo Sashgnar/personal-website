@@ -1,10 +1,8 @@
 import React from 'react';
 
 export default function ProjectCard({ project }) {
-    const isPrivate = project.isPrivate;
     const Wrapper = project.html_url ? 'a' : 'div';
 
-    // Choose status badge style
     let statusClass = 'status-private';
     if (project.status === 'Production' || project.status === 'User Ready') statusClass = 'status-production';
     if (project.status === 'In Development') statusClass = 'status-development';
@@ -18,7 +16,7 @@ export default function ProjectCard({ project }) {
         >
             <div className="mb-4">
                 <span className={`status-badge ${statusClass}`}>
-                    {project.isPrivate ? 'Private • ' : ''}{project.status}
+                    {project.isPrivate ? 'Private | ' : ''}{project.status}
                 </span>
                 <div className="flex justify-between items-start mt-2">
                     <h3 className="card-title">
@@ -35,7 +33,7 @@ export default function ProjectCard({ project }) {
                 <span className="tag tag-primary">
                     {project.language || 'Code'}
                 </span>
-                {project.tags && project.tags.map(tag => (
+                {project.tags && project.tags.map((tag) => (
                     <span key={tag} className="tag">
                         {tag}
                     </span>

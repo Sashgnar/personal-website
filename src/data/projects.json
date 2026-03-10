@@ -103,33 +103,36 @@
   },
   {
     "id": 1076031950,
-    "name": "MANGA_OCR",
-    "slug": "mangaocr",
-    "description": "Real-time computer vision pipeline for translating raw manga pages using OCR and LLM-powered context-aware translation.",
+    "name": "BUBBLATE",
+    "slug": "bubblate",
+    "description": "Live manga reader extension that overlays translated text on supported sites and ships a public home at bubblate.app.",
     "isPrivate": true,
-    "status": "PROTO",
+    "url": "https://bubblate.app",
+    "status": "LIVE",
     "language": "TS",
     "tags": [
-      "CV",
+      "BROWSER-EXT",
+      "OCR",
       "LLM",
       "TYPESCRIPT"
     ],
     "category": "Personal",
     "details": {
-      "overview": "An automated translation pipeline that takes raw manga pages and produces translated versions while preserving the original artwork. Uses OCR to detect and extract text from speech bubbles, LLMs for context-aware translation, and image in-painting to seamlessly replace text.",
+      "overview": "Bubblate is a browser manga reader extension that detects pages on supported reader sites, extracts Japanese text, translates it with context-aware pipelines, and renders the result back into the reading flow. The production home for the product is now live at bubblate.app.",
       "features": [
-        "Automatic text bubble detection using computer vision",
-        "OCR text extraction optimized for Japanese characters",
-        "Context-aware translation using GPT-4",
-        "Image in-painting to replace text naturally",
-        "Batch processing for entire chapters"
+        "Reader adapters for supported manga sites plus a guarded generic fallback path",
+        "Page-level OCR and context-aware translation tuned for manga dialogue",
+        "In-browser overlays that preserve panel readability and artwork integrity",
+        "Visual QA gates for residual source text, mask quality, and placement regressions",
+        "Live product site and extension workflow built for real user testing"
       ],
       "tech": [
         "TypeScript",
-        "OpenCV",
-        "Tesseract OCR",
-        "OpenAI API",
-        "Canvas API"
+        "React",
+        "Browser Extension APIs",
+        "Vision OCR",
+        "LLM Translation",
+        "Playwright"
       ],
       "images": []
     }
